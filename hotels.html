@@ -22,7 +22,58 @@
       <h1 class="visually-hidden">Форма поиска отеля</h1>
       <section class="form">
         <h2 class="visually-hidden">Форма</h2>
-        <!--Здесь будет форма-->
+        <form class="search-hotels" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Pull" id="Pull" checked>
+                <label for="Pull">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Parking" id="Parking">
+                <label for="Parking">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Wifi" id="Wifi">
+                <label for="Wifi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Pull" id="Hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Pull" id="Motel" checked>
+                <label for="Motel">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Pull" id="Appartments" checked>
+                <label for="Appartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <ul>
+              <li class="cost-first">
+                <input type="text" name ="cost-from" id="cost-from" value="" placeholder="от 0">
+                <label class="visually-hidden" for="cost-from">Стоимость от</label>
+              </li>
+              <li class="cost-last">
+                <input type="text" name ="cost-to" id="cost-to" value="" placeholder="до 3000">
+                <label class="visually-hidden" for="cost-to">Стоимость до</label>
+              </li>
+              <li class="range">
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="search-hotels-button">Показать</button>
+        </form>
       </section>
       <section class="results">
         <h2 class="visually-hidden">Результаты поиска</h2>
